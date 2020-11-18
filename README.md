@@ -23,7 +23,15 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(quantiles)
+data<-rnorm(3)
+normal_scores(data)
+#>   normal_score standard_score
+#> 1    0.8694238      1.1414998
+#> 2    0.0000000     -0.4199728
+#> 3   -0.8694238     -0.7215269
+```
 
+``` r
 set.seed(1)
 data<-rnorm(30)
 results<-normal_scores(data)
@@ -76,13 +84,13 @@ use_test("normal_scores")
 test() # Tests all tests in `tests` folder.
 ```
 
-##### 4\. Documentate Package
+##### 4\. Document Package
 
 Finally, I made and edited documentations, including DESCRIPTION,
 Roxygen, and vignette for usage of `normal_scores`.
 
 Also, this package has the dependency on `stats` package, so import that
-package using `use_package`
+package by using `use_package`
 
 ``` r
 # Code -> Insert Roxygen Skeleton

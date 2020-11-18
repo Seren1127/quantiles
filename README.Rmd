@@ -30,9 +30,13 @@ devtools::install_github("Seren1127/quantiles")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` {r, Example}
+``` {r}
 library(quantiles)
+data<-rnorm(3)
+normal_scores(data)
+```
 
+```{r,Example}
 set.seed(1)
 data<-rnorm(30)
 results<-normal_scores(data)
@@ -74,11 +78,11 @@ I made tests for `normal_scores` by `use_test`.
 use_test("normal_scores")
 test() # Tests all tests in `tests` folder.
 ```
-##### 4. Documentate Package
+##### 4. Document Package
 
 Finally, I made and edited documentations, including DESCRIPTION, Roxygen, and vignette for usage of `normal_scores`.
 
-Also, this package has the dependency on `stats` package, so import that package using `use_package`
+Also, this package has the dependency on `stats` package, so import that package by using `use_package`
 ``` r
 # Code -> Insert Roxygen Skeleton
 document()

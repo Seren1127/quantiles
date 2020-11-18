@@ -20,9 +20,9 @@ knitr::opts_chunk$set(
 library(quantiles)
 ```
 
-It is not hard to see `Normality` assumption in many Statistical context. One of the ways to check the normality is Quantile-Quantile plot, shortly Q-Q plot.
+It is not hard to see Normality assumption in many Statistical context. One of the ways to check the normality is Quantile-Quantile plot, shortly Q-Q plot.
 
-To draw the plot, we need `Normal Score` theoretical quantiles of the data, and `Standard Score`, sample quantiles.
+To draw the plot, we need `Normal Score`, theoretical quantiles of the data, and `Standard Score`, sample quantiles.
 
 Function `normal_scores` helps us to calculate these.
 
