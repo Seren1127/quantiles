@@ -1,16 +1,21 @@
 Package: quantiles
-Title: What the Package Does (One Line, Title Case)
+Title: Calculating Scores for Quantile-Quantile Plot
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Seren",
+           family = "Lee",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "seren.lee@stat.ubc.ca")
+Description: This package contains functions that help to plot quantile-quantile plots. Currently, the package supports Normal Q-Q plot. Each function returns theoretical quantiles, and standardized data.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    stats
