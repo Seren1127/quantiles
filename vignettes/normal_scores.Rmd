@@ -10,10 +10,37 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.width = 6,
+  fig.height = 4
 )
 ```
 
 ```{r setup}
 library(quantiles)
 ```
+
+It is not hard to see `Normality` assumption in many Statistical context. One of the ways to check the normality is Quantile-Quantile plot, shortly Q-Q plot.
+
+To draw the plot, we need `Normal Score` theoretical quantiles of the data, and `Standard Score`, sample quantiles.
+
+Function `normal_scores` helps us to calculate these.
+
+For example, in normally distributed case
+
+```{r}
+set.seed(1)
+dat_norm<-rnorm(30)
+with(normal_scores(dat_norm),
+     plot(x = normal_score, y = standard_score))
+```
+
+On the other hand, in non-normally distributed case
+
+```{r}
+set.seed(1)
+dat_exp<-rexp(30,2)
+with(normal_scores(dat_exp),
+     plot(x = normal_score, y = standard_score))
+```
+

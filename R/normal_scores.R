@@ -3,7 +3,7 @@
 #' @param data Numeric vector. The standard score and normal score are calculated on this argument.
 #' @param ties one of "average", "random", "first", and "last". The method to deal with the ties in data. Default is "average"
 #'
-#' @return data.frame
+#' @return data.frame with calculated normal score and standard score of the given data.
 #' @export
 #'
 #' @examples

@@ -12,7 +12,7 @@ normal_scores(data, ties = "average")
 \item{ties}{one of "average", "random", "first", and "last". The method to deal with the ties in data. Default is "average"}
 }
 \value{
-data.frame
+data.frame with calculated normal score and standard score of the given data.
 }
 \description{
 Calculating Normal Score and Standard(Z) Score
